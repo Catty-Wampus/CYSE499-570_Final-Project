@@ -118,8 +118,8 @@ gdt:
 gdt_end:
 
 gdt_descriptor:
-    dw gdt_end - gdt -1 ; Size of GDT minus 1
-    dd gdt              ; Base address of GDT
+    dw gdt_end - gdt -1
+    dd gdt
 
 align 4096
 
